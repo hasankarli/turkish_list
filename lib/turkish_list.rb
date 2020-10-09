@@ -13,6 +13,10 @@ module TurkishList
       city_name = cities.select {|k,v| k == plate_number}
       return city_name.values
     end 
+
+    def self.who_am_i
+      puts "Cities class"
+    end
   
   end
   
