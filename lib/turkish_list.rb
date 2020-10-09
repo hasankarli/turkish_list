@@ -2,7 +2,7 @@ require "turkish_list/version"
 
 module TurkishList
 
-  class Cities
+  class City
     cities = {}
     def initialize
       file = File.read('./cities.json')
