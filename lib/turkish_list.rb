@@ -5,7 +5,7 @@ module TurkishList
   class City
     cities = {}
     def initialize
-      file = File.read('./cities.json')
+      file = File.read('../../cities.json')
       cities = JSON.parse(file)
     end
 
