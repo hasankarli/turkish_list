@@ -1,21 +1,10 @@
 require "turkish_list/version"
-require 'json'
+require 'turkish_list/city'
 
 module TurkishList
 
-  class City
-
-    def city_name_for_plate(plate_number)
-      file = File.read('../cities.json')
-      cities = JSON.parse(file)
-      city_name = cities.select {|k,v| k == plate_number.to_s}
-      return city_name.values
-    end 
-
-    def self.who_am_i
-      puts "Cities class"
-    end
-  
+  def self.city_name_by_plate_number(plate_number)
+    City.find_by_plate_number(plate_number)
   end
   
 end

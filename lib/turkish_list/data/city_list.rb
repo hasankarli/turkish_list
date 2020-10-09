@@ -1,4 +1,4 @@
-{
+CITY_LIST = {
     "1": "ADANA",
     "2": "ADIYAMAN",
     "3": "AFYONKARAHİSAR",
